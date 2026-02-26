@@ -216,3 +216,47 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
             }, 3000);
         });
 });
+
+// Image Gallery Modal Functionality
+function openModal(element) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("expandedImg");
+    const captionText = document.getElementById("caption");
+    const imgElement = element.querySelector("img");
+
+    if (modal && modalImg && window.innerWidth > 768) { // Optional: only show on larger screens, or keep for all
+        modal.style.display = "block";
+        modalImg.src = imgElement.src;
+        captionText.innerHTML = imgElement.alt;
+        document.body.style.overflow = "hidden"; // Prevent scrolling behind modal
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("imageModal");
+    const closeBtn = document.querySelector(".close-modal");
+
+    if (modal && closeBtn) {
+        // Close when clicking the X
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        // Close when clicking outside the image
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === "Escape" && modal.style.display === "block") {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        });
+    }
+});

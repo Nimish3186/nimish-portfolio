@@ -25,6 +25,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -85,9 +86,8 @@
                         critical infrastructure.</p>
                 </div>
                 <div class="about-img-placeholder">
-                    <div class="glitch-wrapper">
-                        <i class="fas fa-user-secret hacker-icon"></i>
-                    </div>
+                    <img src="https://via.placeholder.com/300x300/111111/00ff41?text=Your+Photo+Here"
+                        alt="Nimish Jindal Profile Photo" class="profile-photo">
                 </div>
             </div>
         </div>
@@ -219,6 +219,87 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-padding">
+        <div class="container">
+            <h2 class="section-title">&lt; Achievement Gallery /&gt;</h2>
+            <p class="project-desc" style="margin-bottom: 30px;">
+                Showcase of project snippets, event participation, and key achievements. You can replace the placeholder
+                images here.
+            </p>
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-img-wrapper">
+                        <!-- Upload your image in the root directory and replace the src below -->
+                        <img src="https://via.placeholder.com/600x400/111111/00ff41?text=Upload+Photo+1"
+                            alt="Achievement 1">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-img-wrapper">
+                        <img src="https://via.placeholder.com/600x400/111111/00ff41?text=Upload+Photo+2"
+                            alt="Achievement 2">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-img-wrapper">
+                        <img src="https://via.placeholder.com/600x400/111111/00ff41?text=Upload+Photo+3"
+                            alt="Achievement 3">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-img-wrapper">
+                        <img src="https://via.placeholder.com/600x400/111111/00ff41?text=Upload+Photo+4"
+                            alt="Achievement 4">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-img-wrapper">
+                        <img src="https://via.placeholder.com/600x400/111111/00ff41?text=Upload+Photo+5"
+                            alt="Achievement 5">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-img-wrapper">
+                        <img src="https://via.placeholder.com/600x400/111111/00ff41?text=Upload+Photo+6"
+                            alt="Achievement 6">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="expandedImg">
+            <div id="caption"></div>
         </div>
     </section>
 
